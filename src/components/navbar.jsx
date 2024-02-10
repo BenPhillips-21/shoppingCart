@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react'
 
 const Sidebar = ({ cart, setCart }) => {
-    let leCart = cart
+    const [totalQuantity, setTotalQuantity] = useState()
+    
+    useEffect(() => {
+        let total = 0;
+        for (let i = 0; i < cart.length; i++) {
+            total += cart[i].quantity;
+        }
+        setTotalQuantity(total);
+    }, [cart]); 
+    
     return (
         <nav className="navbar navbar-dark custom-sidebar">
             <div className="container-fluid">
@@ -19,7 +29,7 @@ const Sidebar = ({ cart, setCart }) => {
                         <Link className="nav-link" to="/cart">Cart</Link>
                     </li>
                     <li>
-                        <p style={{color: 'white'}}>{leCart.quantity}</p>
+                        <p style={{color: 'white'}}>{totalQuantity}</p>
                     </li>
                 </ul>
             </div>
