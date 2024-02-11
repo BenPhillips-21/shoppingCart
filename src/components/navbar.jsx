@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const Sidebar = ({ cart, setCart }) => {
     let leCart = cart
-    console.log("leCart", leCart)
     return (
         <nav className="navbar navbar-dark custom-sidebar">
             <div className="container-fluid">
@@ -20,7 +19,7 @@ const Sidebar = ({ cart, setCart }) => {
                         <Link className="nav-link" to="/cart">Cart</Link>
                     </li>
                     <li>
-                        <p style={{color: 'white'}}>{leCart.length}</p>
+                        <p style={{color: 'white'}}>{leCart.quantity}</p>
                     </li>
                 </ul>
             </div>
