@@ -236,4 +236,17 @@ body {
   cursor: pointer;
 }
 
+.product-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-image-container img {
+  width: 40%;
+}
+
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+}
 
