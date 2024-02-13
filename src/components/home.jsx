@@ -1,8 +1,15 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const photos = ['/lauren.jpg', '/home.jpg', '/boatMe.jpg', '/husky.jpg'];
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    const navigate = useNavigate(); 
+
+    const goShop = () => {
+      navigate('/shop'); 
+    };
 
     const handleClick = (number) => {
         console.log(number)
@@ -62,7 +69,7 @@ const Home = () => {
             </div>
             <h2 style={{marginTop: '20px'}}>Polo Ralph Lauren</h2>
             <p style={{width: '800px'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus velit culpa, doloribus porro dolor. Quia corrupti consectetur, nesciunt eos, odit labore aliquam distinctio praesentium incidunt sunt mollitia? Praesentium rerum, corrupti maiores blanditiis tempore nesciunt rem repellendus natus dicta enim doloribus id ducimus voluptatem. Reprehenderit rerum eligendi magnam, beatae numquam enim eius voluptatibus ratione, illum, eaque unde ullam facere exercitationem id veritatia? Quia corrupti consectetur, nesciunt eos, odit labore aliquam distinctio praesentium.</p>
-            <button style={{backgroundColor: 'gold'}}>Shop Now</button>
+            <button style={{backgroundColor: 'gold'}} onClick={goShop}>Shop Now</button>
         </div>
         </>
     );
