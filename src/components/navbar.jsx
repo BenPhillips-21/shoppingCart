@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
     return (
         <nav className="navbar navbar-dark custom-sidebar">
@@ -7,10 +9,10 @@ const Sidebar = () => {
                 </div>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Home</a>
+                        <Link className="nav-link" to="/home">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Shop</a>
+                        <Link className="nav-link" to="/shop">Shop</Link>
                     </li>
                 </ul>
             </div>
