@@ -40,3 +40,69 @@
 .read-the-docs {
   color: #888;
 }
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  padding: 10px 0; /* Adjust padding as needed */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar:hover {
+  background-color: whitesmoke;
+}
+
+.navbar:hover .nav-link {
+  color: black;
+}
+
+.navbar:hover .navbar-brand {
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px; /* Adjust padding as needed */
+  max-width: 1200px; /* Optional: Add a max-width for centering content */
+  margin: 0 auto; /* Optional: Center the container horizontally */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  /* color: black; */
+  color: white;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.slideshow img {
+  width: 100vw;
+  margin-top: -33px;
+  margin-left: -33px;
+}

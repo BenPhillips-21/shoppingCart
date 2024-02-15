@@ -1,8 +1,15 @@
+import './App.css'
+import NavBar from './components/navbar'
+
 function App() {
 
   return (
     <>
-      <h1>Shopping Cart</h1>
+      <NavBar />
+      {/* <h1 className="chungus">Shopping Cart</h1> */}
+      <div className="slideshow">
+        <img src='/chads.jpg'></img>
+      </div>
     </>
   )
 }
