@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'poloFont';
+  src: url('/poloFont.ttf') format('truetype'); /* Adjust the path and format as needed */
+}
+
+body {
+  font-family: 'poloFont', sans-serif; /* Use your font family */
+}
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -41,68 +51,62 @@
   color: #888;
 }
 
-.navbar {
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-  color: #fff;
-  padding: 10px 0; /* Adjust padding as needed */
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.navbar:hover {
-  background-color: whitesmoke;
-}
-
-.navbar:hover .nav-link {
-  color: black;
-}
-
-.navbar:hover .navbar-brand {
-  color: black;
-}
-
-.container {
+.chungus {
   display: flex;
-  justify-content: space-between;
+  flex: row;
+}
+
+.custom-sidebar {
+  background-color: #141414; /* Background color */
+  padding: 20px; /* Padding around the content */
+  position: fixed; /* Change from sticky to fixed */
+  top: 0; /* Stick to the top of the viewport */
+  left: 0; /* Align to the left side of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  height: 100vh;
+  width: 23vw;
+}
+
+
+.custom-sidebar #logo {
+  width: 200px; /* Adjust the width of the logo as needed */
+  margin-bottom: 20px; /* Add margin below the logo */
+}
+
+.custom-sidebar .navbar-nav {
+  width: 100%; /* Make the navbar take up full width */
+  text-align: center; /* Align the navbar items to the center */
+}
+
+.custom-sidebar .navbar-nav .nav-item {
+  margin-bottom: 30px; /* Add margin between each navbar item */
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 0 20px; /* Adjust padding as needed */
-  max-width: 1200px; /* Optional: Add a max-width for centering content */
-  margin: 0 auto; /* Optional: Center the container horizontally */
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  margin-right: 20px;
 }
 
 .nav-link {
-  text-decoration: none;
-  /* color: black; */
+  font-family: 'poloFont', sans-serif; /* Use your custom font */
   color: white;
 }
 
-.nav-link:hover {
-  text-decoration: underline;
+
+
+/* Adjust any other styles as needed */
+
+.slideshow {
+  width: 80%;
+  border: 3px solid black;
+  overflow: hidden; /* Ensure content stays within the container */
+  margin-left: 300px;
 }
 
 .slideshow img {
-  width: 100vw;
-  margin-top: -33px;
-  margin-left: -33px;
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
 }
