@@ -105,8 +105,15 @@ body {
   /* border: 5px solid purple; */
 }
 
+.table {
+  width: 170%;
+}
+
+.table img {
+  width: 100px;
+}
+
 .grid-container {
-  /* border: 3px solid pink; */
   margin-left: 262px;
   width: 76%;
   display: grid;

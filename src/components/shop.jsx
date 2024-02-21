@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { trousers } from './data';
+import { allProducts, blazers, polos, sweaters, trousers, jumpers } from './data';
 
 const Shop = () => {
-    const [products, setProducts] = useState(trousers);
+    const [products, setProducts] = useState(allProducts);
 
     const navigate = useNavigate(); 
 

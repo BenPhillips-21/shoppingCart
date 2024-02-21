@@ -7,12 +7,12 @@ import Product from './components/product'
 import ErrorPage from './components/errorpage'
 import { useParams } from 'react-router-dom';
 import { useState } from 'react'
-import { trousers } from './components/data';
+import { allProducts, polos, sweaters, trousers } from './components/data';
 
 function App() {
 const { name } = useParams();
-const [cart, setCart] = useState([trousers[0]])
-let product = trousers.find(trouser => name === trouser.name)
+const [cart, setCart] = useState([allProducts[0]])
+let product = allProducts.find(leProduct => name === leProduct.name)
 console.log("Cart in app", cart)
 
   return (

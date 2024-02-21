@@ -37,10 +37,10 @@ const Product = ({ product, cart, setCart }) => {
             <div className="product-container">
                 <div className="product-image-container">
                     <img src={product.image} alt={product.name} />
-                    <div className="losButtons">
+                    {/* <div className="losButtons">
                         <button>Bello</button>
                         <button>Bello</button>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="product-info-container">
                     <h1>{product.name}</h1>
