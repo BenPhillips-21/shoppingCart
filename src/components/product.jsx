@@ -8,7 +8,7 @@ const Product = ({ product, cart, setCart }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let leProduct = cart.find(c => product.name === c.name)
+        let leProduct = cart.find(c => product.id === c.id)
         if (leProduct !== undefined) {
             let leProductCopy = leProduct
             leProduct.quantity += quantity

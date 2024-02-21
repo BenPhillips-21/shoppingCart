@@ -8,7 +8,7 @@ const Shop = () => {
     const navigate = useNavigate(); 
 
     const handleProductClick = (product) => {
-        navigate(`/${product.name}`)
+        navigate(`/${product.id}`)
     }
 
     return (

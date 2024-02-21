@@ -7,8 +7,8 @@ const Cart = ({ cart, setCart }) => {
         subTotal += price
     }
 
-    const handleRemove = (name) => {
-        const updatedCart = cart.filter(c => c.name !== name);
+    const handleRemove = (id) => {
+        const updatedCart = cart.filter(c => c.id !== id);
         setCart(updatedCart);
       };
 
@@ -35,12 +35,12 @@ const Cart = ({ cart, setCart }) => {
                 {cart.map(c => {
                   let total = c.price * c.quantity;
                   return (
-                    <tr key={c.name}>
+                    <tr key={c.id}>
                       <td><img src={c.image} alt={c.name} /></td>
                       <td>${c.price}</td>
                       <td>{c.quantity}</td>
                       <td>${total}</td>
-                      <td><button onClick={() => handleRemove(c.name)}>Remove Item</button></td>
+                      <td><button onClick={() => handleRemove(c.id)}>Remove Item</button></td>
                     </tr>
                   );
                 })}

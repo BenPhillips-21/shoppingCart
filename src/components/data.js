@@ -1,10 +1,7 @@
-{/* Add Colour */}
-{/* Add stock */}
-
 export const jumpers = [
     {
         id: 1,
-        name: 'PanelledJumper',
+        name: 'Panelled Jumper',
         price: 60,
         description: 'Stylish panelled jumper',
         image: '/panelledJumper.PNG',
@@ -12,7 +9,7 @@ export const jumpers = [
     },
     {
         id: 2,
-        name: 'GreyJumper',
+        name: 'Grey Jumper',
         price: 55,
         description: 'Comfortable grey jumper',
         image: '/greyJumper.PNG',
@@ -20,7 +17,7 @@ export const jumpers = [
     },
     {
         id: 3,
-        name: 'BeigeJumper',
+        name: 'Beige Jumper',
         price: 65,
         description: 'Elegant beige jumper',
         image: '/beigeJumper.PNG',
@@ -31,7 +28,7 @@ export const jumpers = [
 export const blazers = [
     {
         id: 4,
-        name: 'WhiteBlazer',
+        name: 'White Blazer',
         price: 70,
         description: 'Elegant white blazer',
         image: '/whiteBlazer.PNG',
@@ -39,7 +36,7 @@ export const blazers = [
     },
     {
         id: 5,
-        name: 'StripedBlazer',
+        name: 'Striped Blazer',
         price: 80,
         description: 'Stylish striped blazer',
         image: '/stripedBlazer.PNG',
@@ -47,7 +44,7 @@ export const blazers = [
     },
     {
         id: 6,
-        name: 'NavyBlazer',
+        name: 'Navy Blazer',
         price: 75,
         description: 'Classic navy blazer',
         image: '/navyBlazer.PNG',
@@ -58,7 +55,7 @@ export const blazers = [
 export const trousers = [
     {
         id: 7,
-        name: 'Pants',
+        name: 'Navy Pants',
         price: 10,
         description: 'Some very comfy pants',
         image: '/preppies.PNG',
@@ -66,17 +63,17 @@ export const trousers = [
     },
     {
         id: 8,
-        name: 'chungus',
+        name: 'White Chinos',
         price: 20,
-        description: "my name big chungus",
+        description: "Stylish white chinos",
         image: '/chinoos.PNG',
         quantity: 0
     },
     {
         id: 9,
-        name: 'bungus',
+        name: 'Corduroy Pants',
         price: 20,
-        description: "my name big chungus",
+        description: "Cool corduroy pants",
         image: '/Capture.PNG',
         quantity: 0
     },
@@ -85,7 +82,7 @@ export const trousers = [
 export const sweaters = [
     {
         id: 10,
-        name: 'WhiteSweater',
+        name: 'White Sweater',
         price: 50,
         description: 'Cozy white sweater',
         image: '/whiteSweater.PNG',
@@ -93,7 +90,7 @@ export const sweaters = [
     },
     {
         id: 11,
-        name: 'NavySweater',
+        name: 'Navy Sweater',
         price: 55,
         description: 'Stylish navy sweater',
         image: '/navySweater.PNG',
@@ -101,7 +98,7 @@ export const sweaters = [
     },
     {
         id: 12,
-        name: 'BlueSweater',
+        name: 'Blue Sweater',
         price: 45,
         description: 'Casual blue sweater',
         image: '/blueSweater.PNG',
@@ -112,7 +109,7 @@ export const sweaters = [
 export const polos = [
     {
         id: 13,
-        name: 'BluePolo',
+        name: 'Blue Polo',
         price: 40,
         description: 'Sexy blue polo',
         image: '/bluePolo.PNG',
@@ -120,7 +117,7 @@ export const polos = [
     },
     {
         id: 14,
-        name: 'BlackPolo',
+        name: 'Black Polo',
         price: 35,
         description: 'Classic black polo',
         image: '/blackPolo.PNG',
@@ -128,7 +125,7 @@ export const polos = [
     },
     {
         id: 15,
-        name: 'WhitePolo',
+        name: 'White Polo',
         price: 45,
         description: 'Elegant white polo',
         image: '/whitePolo.PNG',
@@ -143,4 +140,5 @@ export const allProducts = [
     ...blazers,
     ...jumpers
 ];
+
 
