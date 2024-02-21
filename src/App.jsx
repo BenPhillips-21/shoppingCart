@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/navbar'
 import Home from './components/home'
 import Shop from './components/shop'
+import Cart from './components/cart'
 import Product from './components/product'
 import ErrorPage from './components/errorpage'
 import { useParams } from 'react-router-dom';
@@ -20,9 +21,10 @@ console.log("Cart in app", cart)
         <NavBar cart={cart} setCart={setCart} />
           {name==="home" && <Home />}
           {name==="shop" && <Shop />}
+          {name==="cart" && <Cart cart={cart} setCart={setCart}/>}
           {product !== undefined && <Product product={product} cart={cart} setCart={setCart} />}
           {!name && <Home />}
-          {name !== undefined && name !== "shop" && name !== "home" && product === undefined && <ErrorPage />}
+          {name !== undefined && name!=="cart" && name !== "shop" && name !== "home" && product === undefined && <ErrorPage />}
       </div>
     </>
   )

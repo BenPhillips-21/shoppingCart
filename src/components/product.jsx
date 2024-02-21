@@ -12,7 +12,6 @@ const Product = ({ product, cart, setCart }) => {
         if (leProduct !== undefined) {
             let leProductCopy = leProduct
             leProduct.quantity += quantity
-            console.log(leProduct)
             const updatedCart = cart.map(item => {
                 if (item === leProductCopy) {
                 return leProduct; 
