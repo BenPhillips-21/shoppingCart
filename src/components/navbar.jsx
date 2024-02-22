@@ -26,10 +26,8 @@ const Sidebar = ({ cart, setCart }) => {
                         <Link className="nav-link" to="/shop">Shop</Link>
                     </li>
                     <li>
-                        <Link className="nav-link" to="/cart">Cart</Link>
-                    </li>
-                    <li>
-                        <p style={{color: 'white'}}>{totalQuantity}</p>
+                            <Link className="nav-link" to="/cart">Cart</Link>
+                            <p style={{ color: '#D01110', marginTop: '-40px', marginLeft: '40px' }}>{totalQuantity > 0 && totalQuantity}</p>
                     </li>
                 </ul>
             </div>

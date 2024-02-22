@@ -12,7 +12,8 @@ import { allProducts } from './components/data';
 function App() {
 const { id } = useParams();
 let idNumber = parseInt(id);
-const [cart, setCart] = useState([allProducts[0]])
+const [cart, setCart] = useState([])
+const [products, setProducts] = useState(allProducts);
 let product = allProducts.find(leProduct => idNumber === leProduct.id);
 console.log("Product:", product)
 console.log("Cart in app:", cart)
@@ -21,8 +22,8 @@ console.log("Cart in app:", cart)
     <>
       <div className="chungus">
         <NavBar cart={cart} setCart={setCart} />
-          {id==="home" && <Home />}
-          {id==="shop" && <Shop />}
+          {id==="home" && <Home products={products} setProducts={setProducts} />}
+          {id==="shop" && <Shop products={products} setProducts={setProducts} />}
           {id==="cart" && <Cart cart={cart} setCart={setCart}/>}
           {product !== undefined && <Product product={product} cart={cart} setCart={setCart} />}
           {!id && <Home />}

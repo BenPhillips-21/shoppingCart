@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { allProducts, blazers, polos, sweaters, trousers, jumpers } from './data';
 
-const Home = () => {
-    const photos = ['/lauren.jpg', '/home.jpg', '/boatMe.jpg', '/husky.jpg'];
+const Home = ({products, setProducts}) => {
+    const photos = ['/husky.jpg', '/boatMe.jpg', '/polo.jpg'];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const navigate = useNavigate(); 
@@ -12,9 +13,13 @@ const Home = () => {
     };
 
     const handleClick = (number) => {
-        console.log(number)
         setCurrentIndex(number)
       };
+
+    const handleBungus = (array) => {
+        setProducts(array)
+        goShop()
+    }
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -41,30 +46,29 @@ const Home = () => {
                     <button style={{backgroundColor: currentIndex === 0 ? 'gold' : 'grey'}} onClick={() => handleClick(0)}></button>
                     <button style={{backgroundColor: currentIndex === 1 ? 'gold' : 'grey'}} onClick={() => handleClick(1)}></button>
                     <button style={{backgroundColor: currentIndex === 2 ? 'gold' : 'grey'}} onClick={() => handleClick(2)}></button>
-                    <button style={{backgroundColor: currentIndex === 3 ? 'gold' : 'grey'}} onClick={() => handleClick(3)}></button>
                 </div>
             </div>
-            <h3 style={{marginTop: '15px', marginRight: '690px'}}>Explore our range</h3>
+            <h3 style={{marginTop: '15px'}}>Explore our range</h3>
             <div className="images-container">
                 <span className="image-span">
                     <img src="/sweater.jpg" alt="Image 1" />
-                    <span className="text-overlay">Sweaters</span>
+                    <span className="text-overlay" onClick={() => handleBungus(sweaters)}>Sweaters</span>
                 </span>
                 <span className="image-span">
                     <img src="/trousers.jpg" alt="Image 1" />
-                    <span className="text-overlay">Trousers</span>
+                    <span className="text-overlay" onClick={() => handleBungus(trousers)}>Trousers</span>
                 </span>
                 <span className="image-span">
                     <img src="/guapo.jpg" alt="Image 1" />
-                    <span className="text-overlay">Jumpers</span>
+                    <span className="text-overlay" onClick={() => handleBungus(jumpers)}>Jumpers</span>
                 </span>
                 <span className="image-span">
                     <img src="/Polos.jpg" alt="Image 1" />
-                    <span className="text-overlay">Polos</span>
+                    <span className="text-overlay" onClick={() => handleBungus(polos)}>Polos</span>
                 </span>
                 <span className="image-span">
                     <img src="/blazers.jpg" alt="Image 1" />
-                    <span className="text-overlay">Blazers</span>
+                    <span className="text-overlay" onClick={() => handleBungus(blazers)}>Blazers</span>
                 </span>
             </div>
             <h2 style={{marginTop: '20px'}}>Polo Ralph Lauren</h2>

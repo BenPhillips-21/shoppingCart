@@ -47,7 +47,7 @@ const Cart = ({ cart, setCart }) => {
               </tbody>
             </table>
           ) : (
-            <p>Your cart is empty</p>
+            <h1 style={{ margin: '5rem' }}>Your cart is empty</h1>
           )}
           <h4>Total: ${subTotal}</h4>
           <button onClick={() => handleCheckout()}>Checkout</button>

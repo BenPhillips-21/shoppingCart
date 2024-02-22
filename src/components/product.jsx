@@ -36,21 +36,18 @@ const Product = ({ product, cart, setCart }) => {
         <>
             <div className="product-container">
                 <div className="product-image-container">
-                    <img src={product.image} alt={product.name} />
-                    {/* <div className="losButtons">
-                        <button>Bello</button>
-                        <button>Bello</button>
-                    </div> */}
+                    <img style={{ border: '3px solid black', width: '60%' }} src={product.image} alt={product.name} />
                 </div>
                 <div className="product-info-container">
-                    <h1>{product.name}</h1>
-                    <h3>{product.price}</h3>
+                    <h1 style={{ marginTop: '5rem' }}>{product.name}</h1>
+                    <h3>${product.price}</h3>
                     <p>{product.description}</p>
                     <form onSubmit={handleSubmit}>
                         <input
                             type="number"
                             value={quantity}
                             onChange={changeQuantity}
+                            min="0"
                         />
                         <button type="submit">Add to Cart</button>
                     </form>

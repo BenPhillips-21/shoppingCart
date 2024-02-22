@@ -72,7 +72,8 @@ body {
 
 
 .custom-sidebar #logo {
-  width: 200px; /* Adjust the width of the logo as needed */
+  max-width: 100%;
+  width: 13rem; /* Adjust the width of the logo as needed */
   margin-bottom: 20px; /* Add margin below the logo */
 }
 
@@ -82,7 +83,7 @@ body {
 }
 
 .custom-sidebar .navbar-nav .nav-item {
-  margin-bottom: 30px; /* Add margin between each navbar item */
+  margin-bottom: 2rem; /* Add margin between each navbar item */
 }
 
 .textandimage {
@@ -92,8 +93,25 @@ body {
   flex-direction: row;
   margin-left: 270px;
   margin-top: -50px;
-  /* border: 4px solid green; */
-  justify-content: space-between; /* or space-around */
+  justify-content: space-around; 
+}
+
+.buh {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -1.4rem;
+  /* border: 3px solid purple; */
+  width: 294px;
+}
+
+.boop img {
+  border: 3px solid black;
+  transition: border 0.3s ease;
+}
+
+.boop img:hover {
+  border: 4px solid gold;
 }
 
 .text-container {
@@ -220,7 +238,7 @@ body {
   margin-bottom: 1%;
   margin-left: 30%;
   width: 50%;
-  /* border: 4px solid pink; */
+
 }
 
 .shopButtons:hover {
@@ -231,7 +249,9 @@ body {
   display: flex;
   flex-direction: row;
   margin-left: 10px;
+  max-width: 100%;
 }
+
 
 .images-container img {
   width: 165px;
@@ -246,10 +266,7 @@ body {
 .product-container {
   display: flex;
   flex-direction: row;
-}
-
-.product-image-container img {
-  width: 40%;
+  margin-left: 10rem;
 }
 
 .product-info-container {
