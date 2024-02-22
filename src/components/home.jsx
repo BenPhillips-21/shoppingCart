@@ -16,7 +16,7 @@ const Home = ({products, setProducts}) => {
         setCurrentIndex(number)
       };
 
-    const handleBungus = (array) => {
+    const handleProductClick = (array) => {
         setProducts(array)
         goShop()
     }
@@ -52,23 +52,23 @@ const Home = ({products, setProducts}) => {
             <div className="images-container">
                 <span className="image-span">
                     <img src="/sweater.jpg" alt="Image 1" />
-                    <span className="text-overlay" onClick={() => handleBungus(sweaters)}>Sweaters</span>
+                    <span className="text-overlay" onClick={() => handleProductClick(sweaters)}>Sweaters</span>
                 </span>
                 <span className="image-span">
                     <img src="/trousers.jpg" alt="Image 1" />
-                    <span className="text-overlay" onClick={() => handleBungus(trousers)}>Trousers</span>
+                    <span className="text-overlay" onClick={() => handleProductClick(trousers)}>Trousers</span>
                 </span>
                 <span className="image-span">
                     <img src="/guapo.jpg" alt="Image 1" />
-                    <span className="text-overlay" onClick={() => handleBungus(jumpers)}>Jumpers</span>
+                    <span className="text-overlay" onClick={() => handleProductClick(jumpers)}>Jumpers</span>
                 </span>
                 <span className="image-span">
                     <img src="/Polos.jpg" alt="Image 1" />
-                    <span className="text-overlay" onClick={() => handleBungus(polos)}>Polos</span>
+                    <span className="text-overlay" onClick={() => handleProductClick(polos)}>Polos</span>
                 </span>
                 <span className="image-span">
                     <img src="/blazers.jpg" alt="Image 1" />
-                    <span className="text-overlay" onClick={() => handleBungus(blazers)}>Blazers</span>
+                    <span className="text-overlay" onClick={() => handleProductClick(blazers)}>Blazers</span>
                 </span>
             </div>
             <h2 style={{marginTop: '20px'}}>Polo Ralph Lauren</h2>
