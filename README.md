@@ -2,7 +2,7 @@
 
 👔 Introducing my Ralph Lauren Online Store! 💻
 
-    As the culmination of my journey in learning React, I'm thrilled to present this dummy E-commerce site featuring Ralph Lauren products. I'm looking forward to tackling Node.js next...
+As the culmination of my journey in learning React, I'm thrilled to present this dummy E-commerce site featuring Ralph Lauren products. I'm looking forward to tackling Node.js next...
 
 💡 Key Features
     Seamless Shopping Experience: Enjoy a seamless shopping experience with our user-friendly interface, designed to make browsing, selecting, and purchasing your favorite items effortless.
